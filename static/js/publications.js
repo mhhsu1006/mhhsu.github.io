@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       const card = target.closest(".publication-card");
       if (card && !target.closest(".publication-links")) {
-        console.log("Clicked card:", card.getAttribute("data-title"));
+        console.log("Clicked card:", card.getAttribute("data-id"));
         // Navigate to a placeholder URL for the paper
         // In a real application, you would use a unique identifier for each paper
         window.location.href =
-          "/paper/" + encodeURIComponent(card.getAttribute("data-title"));
+          "/publications/" + encodeURIComponent(card.getAttribute("data-id"));
       }
     }
   });

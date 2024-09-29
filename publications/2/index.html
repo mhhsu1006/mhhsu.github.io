@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Ming-Hao Hsu</title>
+    <title>Diffusion Model-Augmented Behavioral Cloning - Ming-Hao Hsu</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
@@ -75,25 +75,25 @@
 
     <div class="container mt-4">
 <div class="container">
-  <h1 class="mb-4">Blog</h1>
-  
-  <div class="card mb-4">
-    <div class="card-body">
-      <h2 class="card-title">My Amazing Trip to Japan</h2>
-      <p class="card-text">I recently had the opportunity to visit Japan, and it was an incredible experience...</p>
-      <p class="card-text">
-        <small class="text-muted"
-          >Published on September 01, 2024</small
-        >
-      </p>
-      <a
-        href="/blog/1/"
-        class="btn btn-primary"
-        >Read More</a
-      >
+  <h1 class="mb-4 text-center">Diffusion Model-Augmented Behavioral Cloning</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <img
+        src="/static/images/dbc.png"
+        alt="Paper structure"
+        class="img-fluid mb-4 paper-image"
+      />
     </div>
   </div>
-  
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <p><strong>Authors:</strong> Shang-Fu Chen*, Hsiang-Chun Wang*, Ming-Hao Hsu, Chun-Mao Lai, Shao-Hua Sun</p>
+      <p><strong>Journal:</strong> Forty-first International Conference on Machine Learning (ICML)</p>
+      <p><strong>Year:</strong> 2024</p>
+      <h2>Abstract</h2>
+      <p class="paper-abstract">Imitation learning addresses the challenge of learning by observing an expert&#39;s demonstrations without access to reward signals from environments. Most existing imitation learning methods that do not require interacting with environments either model the expert distribution as the conditional probability p(a|s) (e.g., behavioral cloning, BC) or the joint probability p(s, a). Despite the simplicity of modeling the conditional probability with BC, it usually struggles with generalization. While modeling the joint probability can improve generalization performance, the inference procedure is often time-consuming, and the model can suffer from manifold overfitting. This work proposes an imitation learning framework that benefits from modeling both the conditional and joint probability of the expert distribution. Our proposed Diffusion Model-Augmented Behavioral Cloning (DBC) employs a diffusion model trained to model expert behaviors and learns a policy to optimize both the BC loss (conditional) and our proposed diffusion model loss (joint). DBC outperforms baselines in various continuous control tasks in navigation, robot arm manipulation, dexterous manipulation, and locomotion. We design additional experiments to verify the limitations of modeling either the conditional probability or the joint probability of the expert distribution, as well as compare different generative models. Ablation studies justify the effectiveness of our design choices.</p>
+    </div>
+  </div>
 </div>
 </div>
 

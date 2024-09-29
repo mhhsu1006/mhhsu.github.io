@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Ming-Hao Hsu</title>
+    <title>GSQA: An End-to-End Model for Generative Spoken Question Answering - Ming-Hao Hsu</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
@@ -75,25 +75,25 @@
 
     <div class="container mt-4">
 <div class="container">
-  <h1 class="mb-4">Blog</h1>
-  
-  <div class="card mb-4">
-    <div class="card-body">
-      <h2 class="card-title">My Amazing Trip to Japan</h2>
-      <p class="card-text">I recently had the opportunity to visit Japan, and it was an incredible experience...</p>
-      <p class="card-text">
-        <small class="text-muted"
-          >Published on September 01, 2024</small
-        >
-      </p>
-      <a
-        href="/blog/1/"
-        class="btn btn-primary"
-        >Read More</a
-      >
+  <h1 class="mb-4 text-center">GSQA: An End-to-End Model for Generative Spoken Question Answering</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <img
+        src="/static/images/gsqa.png"
+        alt="Paper structure"
+        class="img-fluid mb-4 paper-image"
+      />
     </div>
   </div>
-  
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <p><strong>Authors:</strong> Min-Han Shih*, Ho-Lam Chung*, Yu-Chi Pai*, Ming-Hao Hsu, Guan-Ting Lin, Shang-Wen Li, Hung-yi Lee</p>
+      <p><strong>Journal:</strong> Proceedings of the 2024 Conference of the International Speech Communication Association (INTERSPEECH)</p>
+      <p><strong>Year:</strong> 2024</p>
+      <h2>Abstract</h2>
+      <p class="paper-abstract">In recent advancements in spoken question answering (QA), end-to-end models have made significant strides. However, previous research has primarily focused on extractive span selection. While this extractive-based approach is effective when answers are present directly within the input, it falls short in addressing abstractive questions, where answers are not directly extracted but inferred from the given information. To bridge this gap, we introduce the first end-to-end Generative Spoken Question Answering (GSQA) model that empowers the system to engage in abstractive reasoning. The challenge in training our GSQA model lies in the absence of a spoken abstractive QA dataset. We propose using text models for initialization and leveraging the extractive QA dataset to transfer knowledge from the text generative model to the spoken generative model. Experimental results indicate that our model surpasses the previous extractive model by 3% on extractive QA datasets. Furthermore, the GSQA model has only been fine-tuned on the spoken extractive QA dataset. Despite not having seen any spoken abstractive QA data, it can still closely match the performance of the cascade model. In conclusion, our GSQA model shows the potential to generalize to a broad spectrum of questions, thus further expanding the spoken question answering capabilities of abstractive QA.</p>
+    </div>
+  </div>
 </div>
 </div>
 
