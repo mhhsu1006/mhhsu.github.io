@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diffusion Model-Augmented Behavioral Cloning - Ming-Hao Hsu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/css/style.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/"
+          >Ming-Hao Hsu</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/research/">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/publications/"
+                >Publications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/">Contact</a>
+            </li>
+          </ul>
+          <button
+            id="dark-mode-toggle"
+            class="btn btn-sm btn-outline-secondary"
+          >
+            <img
+              src="/static/images/darkmode_icon.svg"
+              alt="Dark Mode"
+              class="mode-icon dark-icon"
+            />
+            <img
+              src="/static/images/lightmode_icon.svg"
+              alt="Light Mode"
+              class="mode-icon light-icon"
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+<div class="container">
+  <h1 class="mb-4 text-center">Diffusion Model-Augmented Behavioral Cloning</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <img
+        src="/static/images/dbc.png"
+        alt="Paper structure"
+        class="img-fluid mb-4 paper-image"
+      />
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <p><strong>Authors:</strong> Shang-Fu Chen*, Hsiang-Chun Wang*, Ming-Hao Hsu, Chun-Mao Lai, Shao-Hua Sun</p>
+      <p><strong>Journal:</strong> Forty-first International Conference on Machine Learning (ICML)</p>
+      <p><strong>Year:</strong> 2024</p>
+      <h2>Abstract</h2>
+      <p class="paper-abstract">Imitation learning addresses the challenge of learning by observing an expert&#39;s demonstrations without access to reward signals from environments. Most existing imitation learning methods that do not require interacting with environments either model the expert distribution as the conditional probability p(a|s) (e.g., behavioral cloning, BC) or the joint probability p(s, a). Despite the simplicity of modeling the conditional probability with BC, it usually struggles with generalization. While modeling the joint probability can improve generalization performance, the inference procedure is often time-consuming, and the model can suffer from manifold overfitting. This work proposes an imitation learning framework that benefits from modeling both the conditional and joint probability of the expert distribution. Our proposed Diffusion Model-Augmented Behavioral Cloning (DBC) employs a diffusion model trained to model expert behaviors and learns a policy to optimize both the BC loss (conditional) and our proposed diffusion model loss (joint). DBC outperforms baselines in various continuous control tasks in navigation, robot arm manipulation, dexterous manipulation, and locomotion. We design additional experiments to verify the limitations of modeling either the conditional probability or the joint probability of the expert distribution, as well as compare different generative models. Ablation studies justify the effectiveness of our design choices.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+    <footer class="footer py-3">
+      <div class="container text-center">
+        <span>&copy; 2023 Ming-Hao Hsu. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/dark-mode.js"></script>
+    
+  </body>
+</html>

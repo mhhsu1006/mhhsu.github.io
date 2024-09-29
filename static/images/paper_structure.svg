@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="280" viewBox="0 0 200 280">
+  <rect x="10" y="10" width="180" height="260" fill="none" stroke="black" stroke-width="2"/>
+  <line x1="20" y1="40" x2="180" y2="40" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="70" x2="180" y2="70" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="100" x2="180" y2="100" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="130" x2="180" y2="130" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="160" x2="180" y2="160" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="190" x2="180" y2="190" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="220" x2="180" y2="220" stroke="black" stroke-width="1"/>
+  <text x="100" y="30" font-family="Arial" font-size="14" text-anchor="middle">Paper Structure</text>
+</svg>
